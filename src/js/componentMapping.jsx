@@ -27,13 +27,13 @@ class Contact extends React.Component {
 
     render(){
         const mapToComponet = (data) => {
-            //¿©±â¼­ contact´Â data, i´Â ÀÎµ¦½ºÀÓ
+            //ï¿½ï¿½ï¿½â¼­ contactï¿½ï¿½ data, iï¿½ï¿½ ï¿½Îµï¿½ï¿½ï¿½ï¿½ï¿½
             return data.map((contact,i)=>{
                 return (<ContactInfo contact={contact} key={i}/>);
             });
         };
 
-        //¸®ÅÏ¾È¿¡ jsx¹®¹ý ¾È¿¡¼­ È£Ãâ ÇÒ¶© {}¸¦ ÀÌ¿ë => mapToComponet ¸Þ¼Òµå È£Ãâ
+        //ï¿½ï¿½ï¿½Ï¾È¿ï¿½ jsxï¿½ï¿½ï¿½ï¿½ ï¿½È¿ï¿½ï¿½ï¿½ È£ï¿½ï¿½ ï¿½Ò¶ï¿½ {}ï¿½ï¿½ ï¿½Ì¿ï¿½ => mapToComponet ï¿½Þ¼Òµï¿½ È£ï¿½ï¿½
         return(
             <div>
                 { mapToComponet(this.state.contactData) }

@@ -1,6 +1,6 @@
 import React from  'react';
 import {render} from 'react-dom';
-import App from './componentMapping';
+import Contact from './Contact';
 
 
 /*
@@ -13,7 +13,7 @@ import App from './componentMapping';
 * *
 */
 
-render(<App/>, document.getElementById('wraper'));
+render(<Contact/>, document.getElementById('wraper'));
 
 
 
